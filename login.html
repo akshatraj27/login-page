@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .header {
+        /*border: 4px solid red;*/
+        height: 70px;
+    }
+
+    .header img {
+        width: 100px;
+        height: 60px;
+    }
+
+    .header h3 {
+        position: absolute;
+        top: 20px;
+        margin: 0px 100px;
+    }
+
+    .right {
+        background-color: rgb(91, 213, 250);
+        border-radius: 10px;
+        width: 100px;
+        height: 50px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .right p {
+        font-weight: bold;
+        font-size: 20px;
+        margin: 10px 28px;
+    }
+
+    .right a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .right span {
+        position: absolute;
+        color: white;
+        right: 78px;
+        top: 18px;
+    }
+
+    .signup {
+        background-color: rgb(91, 213, 250);
+        border-radius: 10px;
+        width: 110px;
+        height: 50px;
+        position: absolute;
+        top: 0px;
+        right: 110px;
+    }
+
+    .signup p {
+        font-weight: bold;
+        font-size: 20px;
+        margin: 10px 25px;
+    }
+
+    .signup a {
+        color: white;
+    }
+
+    .signup span {
+        position: absolute;
+        right: 90px;
+    }
+
+    .background {
+        background-color: skyblue;
+        width: 100%;
+        height: 680px;
+    }
+
+    .box {
+        position: absolute;
+        top: 180px;
+    }
+
+    .rightbox {
+        position: absolute;
+        top: 205px;
+        right: 110px;
+        border: 4px solid white;
+        border-radius: 15px;
+        background-color: white;
+        width: 550px;
+        height: 450px;
+    }
+
+    .rightbox img {
+        margin: 0px 140px;
+        width: 250px;
+        height: 80px;
+    }
+
+    .rightbox span {
+        position: absolute;
+        top: 105px;
+        left: 20px;
+
+        color: black;
+        font-size: 25px;
+    }
+
+    .rightbox input {
+        border: none;
+        border-bottom: 1px solid black;
+        margin: 25px 55px;
+        width: 250px;
+        font-size: 18px;
+    }
+
+    .pass span {
+        position: absolute;
+        top: 182px;
+        left: 20px;
+        color: black;
+        font-size: 25px;
+
+    }
+
+    .btn2 {
+        font-size: 20px;
+        margin: 0px 135px;
+        background-color: rgb(91, 213, 250);
+        color: white;
+        border: 2px solid;
+        background-color: rgb(91, 213, 250);
+        width: 155px;
+        border-radius: 5px;
+    }
+
+    .no h3 {
+        font-size: 20px;
+        margin: 30px 150px;
+    }
+
+    .btn1 {
+        font-size: 20px;
+        margin: 0px 150px;
+        background-color: rgb(91, 213, 250);
+        border: 2px solid rgb(91, 213, 250);
+        border-radius: 5px;
+        width: 155px;
+    }
+
+    .btn1 a {
+        color: white;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0px;
+        right: 10px;
+        color: white;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqoAJFU2tVzEFhLeFAAVWeCcfN8ropGNqJevKOSQXmblBfgu1q3uB2in2AvmZp4S7xbxA&usqp=CAU"
+            alt="">
+        <h3>Course Shop App</h3>
+    </div>
+    <nav>
+        <div class="right">
+            <p><a href="home.html">Home</a></p>
+            <span class="glyphicon glyphicon-home"></span>
+            <!--Going to Home Page-->
+            <div class="signup">
+                <p><a href="signup.html">Signup</a></p>
+                <span class="glyphicon glyphicon-pencil"></span>
+                <!--Going to Home Page-->
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="background">
+    </div>
+
+    <div class="box">
+        <img src="https://leltajmil.com/media/site/loginregistercards/login-leltajmil-01.png" alt="">
+    </div>
+    <form>
+        <div class="rightbox">
+            <img src="https://i.pinimg.com/originals/4f/ae/bb/4faebb2031bb2787fda144179e3662a7.jpg" alt="">
+            <span class="glyphicon glyphicon-user"></span>
+            <input type="text" placeholder="Username" required>
+
+            <div class="pass">
+                <span class="glyphicon glyphicon-lock"></span>
+                <input type="password" placeholder="Password" required>
+            </div>
+
+            <div class="btn">
+                <button class="btn2" onclick="alert('You have logged in')"><a href="user.html">Login</a></button>
+            </div>
+
+            <div class="no">
+                <h3>Don't have an account?</h3>
+                <button class="btn1"><a href="signup.html">Signup</a></button>
+    </form>
+    </div>
+    </div>
+
+
+    <div class="footer">
+        <h2>Created By- Akshat</h2>
+    </div>
+</body>
+
+</html>
